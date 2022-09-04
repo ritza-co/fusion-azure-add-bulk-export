@@ -13,7 +13,7 @@ async function main() {
     try {
         let users = await graph.getUsers();
         fs.writeFileSync('users.json',JSON.stringify(users, null, 4));
-        console.log("Users downloaded"); 
+        console.log("Users downloaded to users.json"); 
     } catch (error) {
         console.log(error);
     }
